@@ -12,15 +12,12 @@ public class Main {
 		int cnt=0; //도전 횟수
 		int reCnt=0; //재시도 횟수
 		Scanner sc=new Scanner(System.in);
-		System.out.println(stoneBridge);
 
 		while(thisNum <= stoneLength) {
-			System.out.println((cnt+1)+"." );
 			inNum = sc.nextInt();
-			System.out.println(inNum);
 			
-			if(inNum > 4 && inNum < 1) {
-				System.out.println("1~4사이 숫자를 입려해주세요.");
+			if(inNum > 4 || inNum < 1) {
+				System.out.println("1~4사이 숫자를 입력해주세요.");
 				continue;
 			}else {
 				thisNum += inNum-1;
